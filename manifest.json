@@ -1,0 +1,90 @@
+{
+  "name": "ai",
+  "version": "0.1.0",
+  "apiVersion": 4,
+  "permissions": [
+    "net",
+    "db",
+    "admin"
+  ],
+  "depends": {},
+  "conflicts": [],
+  "commands": [
+    {
+      "name": "ai",
+      "description": "与 AI 对话",
+      "usage": "/ai <问题>",
+      "scenes": [
+        "group",
+        "c2c"
+      ]
+    }
+  ],
+  "regex": [],
+  "events": [],
+  "buttons": [],
+  "cron": [
+    {
+      "name": "maintenance",
+      "cron": "7 16 * * *"
+    }
+  ],
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ui",
+      "auth": "admin"
+    },
+    {
+      "method": "GET",
+      "path": "/api/settings",
+      "auth": "admin"
+    },
+    {
+      "method": "POST",
+      "path": "/api/settings",
+      "auth": "admin"
+    },
+    {
+      "method": "GET",
+      "path": "/api/report",
+      "auth": "admin"
+    },
+    {
+      "method": "GET",
+      "path": "/api/conversations",
+      "auth": "admin"
+    },
+    {
+      "method": "GET",
+      "path": "/api/service-calls",
+      "auth": "admin"
+    },
+    {
+      "method": "POST",
+      "path": "/api/conversations/clear",
+      "auth": "admin"
+    },
+    {
+      "method": "POST",
+      "path": "/api/test",
+      "auth": "admin"
+    }
+  ],
+  "hasMiddleware": false,
+  "services": [
+    "ai.llm"
+  ],
+  "durableObjects": [],
+  "displayName": "AI 文字聊天",
+  "description": "在 QQ 中向 AI 提问，管理聊天记录并查看用量",
+  "configSchema": {
+    "type": "object",
+    "properties": {}
+  },
+  "ui": {
+    "path": "/ui",
+    "title": "AI 管理",
+    "icon": "message-circle"
+  }
+}

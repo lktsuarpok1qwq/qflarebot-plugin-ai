@@ -1,0 +1,33 @@
+# Local development files
+/dev/
+/AGENTS.md
+/.agents/
+/.vscode/
+/.idea/
+/.prettierrc.json
+/.prettierignore
+/.editorconfig
+*.code-workspace
+
+# Tool-required dependency and output locations
+node_modules/
+dist/
+*.tsbuildinfo
+.wrangler/
+.vite/
+.prettiercache
+*.log
+
+# Local credentials
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+
+# OS and editor temporary files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

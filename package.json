@@ -1,0 +1,18 @@
+{
+    "name": "qflarebot-plugin-ai",
+    "version": "0.1.0",
+    "description": "在 QQ 中向 AI 提问，管理聊天记录并查看用量",
+    "license": "MIT",
+    "type": "module",
+    "keywords": [
+        "qflarebot-plugin"
+    ],
+    "scripts": {
+        "build": "pnpm --dir dev run build",
+        "typecheck": "pnpm --dir dev run typecheck",
+        "test": "pnpm --dir dev run test",
+        "format:check": "pnpm --dir dev run format:check",
+        "format": "pnpm --dir dev run format"
+    },
+    "packageManager": "pnpm@10.34.5"
+}
