@@ -56,5 +56,6 @@ export async function release(db: PluginDB, lease: Lease, now = Date.now()): Pro
 
 export async function clearHistory(db: PluginDB, id: string): Promise<void> {
     await db.run(`UPDATE {conversations} SET messages_json='[]',last_success_at_ms=NULL,epoch=epoch+1
-        WHERE conversation_id=?`, id);
+        WHERE conversation_id=? AND (messages_json<>'[]' OR last_success_at_ms IS NOT NULL OR lock_until_ms>?)`,
+        id, Date.now());
 }

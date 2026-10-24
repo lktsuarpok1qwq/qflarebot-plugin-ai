@@ -17,11 +17,11 @@ button:disabled{opacity:.5;cursor:not-allowed;transform:none}.qb-btn:disabled:ho
 .metric strong{display:block;font-size:var(--qb-text-2xl);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}.metric span{color:var(--qb-fg-muted);font-size:12px}
 .scroll{max-width:100%;overflow:auto;max-height:400px}section.qb-card{min-width:0}table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}th,td{text-align:left;padding:10px;border-bottom:1px solid var(--qb-border);vertical-align:top;overflow-wrap:anywhere}th{font-size:12px;color:var(--qb-fg-muted)}
 :is(#services-list,#groups,#test-metrics) table{min-width:680px}:is(#services-list,#groups,#test-metrics) :is(th,td){white-space:nowrap}:is(#services-list,#groups,#test-metrics) td:first-child,#services-list td:nth-child(3),#test-metrics td:last-child{white-space:normal;min-width:120px;max-width:260px}
-#rounds{max-height:600px;overflow:auto}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.7 var(--qb-font-mono);margin:8px 0;background:var(--qb-surface-muted);border-radius:var(--qb-radius);padding:12px;max-height:360px;overflow:auto}#rounds pre{max-height:none;overflow:visible}
+#conversations button{white-space:nowrap}#rounds{max-height:600px;overflow:auto}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.7 var(--qb-font-mono);margin:8px 0;background:var(--qb-surface-muted);border-radius:var(--qb-radius);padding:12px;max-height:360px;overflow:auto}#rounds pre{max-height:none;overflow:visible}
 .notice{padding:12px;border-radius:var(--qb-radius);background:var(--qb-surface-muted);overflow-wrap:anywhere}.warning{color:var(--qb-warning);background:var(--qb-warning-bg)}.error{color:var(--qb-danger);background:var(--qb-danger-bg)}
 .qb-btn.danger{color:var(--qb-danger);background:var(--qb-danger-bg)}.qb-btn.danger:hover:not(:disabled){background:color-mix(in srgb,var(--qb-danger-bg),var(--qb-danger) 10%)}.qb-btn.destructive{background:var(--qb-danger);color:var(--qb-on-accent)}.qb-btn.destructive:hover:not(:disabled){background:color-mix(in srgb,var(--qb-danger),var(--qb-fg) 10%)}.qb-btn.danger:disabled:hover{background:var(--qb-danger-bg)}.qb-btn.destructive:disabled:hover{background:var(--qb-danger)}.muted{color:var(--qb-fg-muted)}
 .actions{display:flex;gap:8px;flex-wrap:wrap}fieldset>.actions{margin-top:12px}.hidden,[hidden]{display:none!important}.viewport-probe{position:fixed;inset:0;pointer-events:none}dialog{position:fixed;inset:auto;top:var(--confirm-top,50%);left:var(--confirm-left,50%);transform:translate(-50%,-50%);margin:0;max-height:calc(var(--confirm-height,100vh) - 32px);overflow:auto;color:var(--qb-fg);background:var(--qb-surface);border:1px solid var(--qb-border);border-radius:var(--qb-radius-xl);padding:24px;max-width:480px;width:min(480px,calc(var(--confirm-width,100vw) - 32px));box-shadow:var(--qb-shadow)}#confirm-text{overflow-wrap:anywhere}dialog::backdrop{background:var(--qb-overlay)}
-.setting{display:grid;grid-template-columns:minmax(150px,1fr) minmax(0,1fr);column-gap:16px;row-gap:6px;align-items:center;padding:12px 0;border-bottom:1px solid var(--qb-border)}.setting label{min-width:0}.setting small{color:var(--qb-fg-muted);line-height:1.5;font-size:12px}.control-wrap{min-width:0}.checkbox-wrap{display:flex;justify-content:flex-end}.setting .toggle-target{display:inline-flex;align-items:center;justify-content:center;flex:none;width:44px;height:44px;min-width:0;cursor:pointer}.setting input[role=switch]{appearance:none;position:relative;flex:none;width:42px;height:22px;margin:0;border:0;border-radius:var(--qb-radius-full);background:var(--qb-border-strong);cursor:pointer}.setting input[role=switch]:before{content:"";position:absolute;left:3px;top:3px;width:16px;height:16px;border-radius:50%;background:var(--qb-fg-muted)}.setting input[role=switch]:checked{background:var(--qb-accent)}.setting input[role=switch]:checked:before{left:23px;background:var(--qb-on-accent)}.setting input[role=switch]:disabled{opacity:.5;cursor:not-allowed}.setting textarea{min-height:100px;resize:vertical}fieldset{border:0;padding:0;margin:0;min-width:0}#connection-advanced{padding:12px 0}#connection-advanced summary{cursor:pointer;font-weight:600;min-height:44px;padding:12px 0}.setting-group{margin:16px 0;padding:0;border-block:1px solid var(--qb-border)}.setting-group>.setting:last-child{border-bottom:0}.setting-disabled label,.setting-disabled .qb-input{color:var(--qb-fg-muted)}.setting-disabled .qb-input{background:var(--qb-surface-muted);cursor:not-allowed}.settings-state{min-height:24px}.field-error{grid-column:2;margin:0;color:var(--qb-danger);font-size:12px;line-height:1.5}.qb-input[aria-invalid=true]{border-color:var(--qb-danger)}.qb-input[aria-invalid=true]:focus{box-shadow:0 0 0 3px color-mix(in srgb,var(--qb-danger) 22%,transparent)}.skeleton{display:grid;gap:12px;margin:12px 0}.skeleton span{display:block;height:32px;border-radius:var(--qb-radius);background:var(--qb-surface-muted)}#feedback{position:fixed;inset-block-start:max(12px,env(safe-area-inset-top));inset-inline-end:max(12px,env(safe-area-inset-right));max-width:min(400px,calc(100% - 24px));z-index:10;display:flex;align-items:center;gap:12px;box-shadow:var(--qb-shadow-overlay)}#feedback .toast-close{padding:0;min-width:44px;justify-content:center;flex:none}#settings-problem{margin-bottom:12px}#settings-notices:not(:has(> :not([hidden]))){display:none}@media(max-width:900px){.filters{grid-template-columns:repeat(2,minmax(0,1fr))}} @media(max-width:600px){#services-form{grid-template-columns:minmax(0,1fr) auto}#services-form>label:first-child{grid-column:1/-1}.setting{grid-template-columns:1fr;gap:8px}.field-error{grid-column:1}.checkbox-wrap{justify-content:flex-start}nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}nav .qb-btn{justify-content:center}nav .qb-btn:last-child:nth-child(odd){grid-column:1/-1}.filters .model-filter,.query-group{grid-column:1/-1}.dates{grid-template-columns:repeat(2,minmax(0,1fr))}.date-hint{grid-column:1/-1;min-height:0}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.metric:last-child{grid-column:1/-1}section{padding:16px}button,.qb-input,.actions .qb-btn,summary{min-height:44px}label{min-width:120px}th,td{padding:8px}main.qb-page{padding:12px}}@media(pointer:coarse){main.qb-page{--qb-control-height:var(--qb-touch-min)}button,.qb-input,.actions .qb-btn,summary{min-height:var(--qb-touch-min)}}
+.setting{display:grid;grid-template-columns:minmax(150px,1fr) minmax(0,1fr);column-gap:16px;row-gap:6px;align-items:center;padding:12px 0;border-bottom:1px solid var(--qb-border)}.setting label{min-width:0}.setting small{color:var(--qb-fg-muted);line-height:1.5;font-size:12px}.control-wrap{min-width:0}.checkbox-wrap{display:flex;justify-content:flex-end}.setting .toggle-target{display:inline-flex;align-items:center;justify-content:center;flex:none;width:44px;height:44px;min-width:0;cursor:pointer}.setting input[role=switch]{appearance:none;position:relative;flex:none;width:42px;height:22px;margin:0;border:0;border-radius:var(--qb-radius-full);background:var(--qb-border-strong);cursor:pointer}.setting input[role=switch]:before{content:"";position:absolute;left:3px;top:3px;width:16px;height:16px;border-radius:50%;background:var(--qb-fg-muted)}.setting input[role=switch]:checked{background:var(--qb-accent)}.setting input[role=switch]:checked:before{left:23px;background:var(--qb-on-accent)}.setting input[role=switch]:disabled{opacity:.5;cursor:not-allowed}.setting textarea{min-height:100px;resize:vertical}fieldset{border:0;padding:0;margin:0;min-width:0}:is(#connection-advanced,#qq-advanced){padding:12px 0}:is(#connection-advanced,#qq-advanced) summary{cursor:pointer;font-weight:600;min-height:44px;padding:12px 0}.setting-group{margin:16px 0;padding:0;border-block:1px solid var(--qb-border)}.setting-group>.setting:last-child{border-bottom:0}.setting-disabled label,.setting-disabled .qb-input{color:var(--qb-fg-muted)}.setting-disabled .qb-input{background:var(--qb-surface-muted);cursor:not-allowed}.settings-state{min-height:24px}.field-error{grid-column:2;margin:0;color:var(--qb-danger);font-size:12px;line-height:1.5}.qb-input[aria-invalid=true]{border-color:var(--qb-danger)}.qb-input[aria-invalid=true]:focus{box-shadow:0 0 0 3px color-mix(in srgb,var(--qb-danger) 22%,transparent)}.skeleton{display:grid;gap:12px;margin:12px 0}.skeleton span{display:block;height:32px;border-radius:var(--qb-radius);background:var(--qb-surface-muted)}#feedback{position:fixed;inset-block-start:max(12px,env(safe-area-inset-top));inset-inline-end:max(12px,env(safe-area-inset-right));max-width:min(400px,calc(100% - 24px));z-index:10;display:flex;align-items:center;gap:12px;box-shadow:var(--qb-shadow-overlay)}#feedback .toast-close{padding:0;min-width:44px;justify-content:center;flex:none}#settings-problem{margin-bottom:12px}#settings-notices:not(:has(> :not([hidden]))){display:none}@media(max-width:900px){.filters{grid-template-columns:repeat(2,minmax(0,1fr))}} @media(max-width:600px){#services-form{grid-template-columns:minmax(0,1fr) auto}#services-form>label:first-child{grid-column:1/-1}.setting{grid-template-columns:1fr;gap:8px}.field-error{grid-column:1}.checkbox-wrap{justify-content:flex-start}nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}nav .qb-btn{justify-content:center}nav .qb-btn:last-child:nth-child(odd){grid-column:1/-1}.filters .model-filter,.query-group{grid-column:1/-1}.dates{grid-template-columns:repeat(2,minmax(0,1fr))}.date-hint{grid-column:1/-1;min-height:0}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.metric:last-child{grid-column:1/-1}section{padding:16px}button,.qb-input,.actions .qb-btn,summary{min-height:44px}label{min-width:120px}th,td{padding:8px}main.qb-page{padding:12px}}@media(pointer:coarse){main.qb-page{--qb-control-height:var(--qb-touch-min)}button,.qb-input,.actions .qb-btn,summary{min-height:var(--qb-touch-min)}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style></head><body><main class="qb-page">
 <nav role="tablist" aria-label="功能导航"><button id="connection-nav" class="qb-btn" data-page="connection" role="tab" aria-selected="true" tabindex="0" aria-controls="connection-page">API 连接</button><button id="qq-nav" class="qb-btn" data-page="qq" role="tab" aria-selected="false" tabindex="-1" aria-controls="qq-page">QQ 对话</button><button id="report-title" class="qb-btn" data-page="report" role="tab" aria-selected="false" tabindex="-1" aria-controls="report-page">使用统计</button><button id="history-nav" class="qb-btn" data-page="history" role="tab" aria-selected="false" tabindex="-1" aria-controls="history-page">聊天历史</button><button id="services-nav" class="qb-btn" data-page="services" role="tab" aria-selected="false" tabindex="-1" aria-controls="services-page">Service 记录</button></nav>
@@ -37,6 +37,7 @@ button:disabled{opacity:.5;cursor:not-allowed;transform:none}.qb-btn:disabled:ho
 <details id="test-details" hidden><summary>技术详情</summary><pre id="test-result"></pre></details></section>
 <section id="qq-page" class="qb-card" role="tabpanel" aria-labelledby="qq-title" hidden><div class="section-heading"><h2 id="qq-title">QQ 对话</h2><button type="button" class="qb-btn" data-reload-settings disabled>重新加载设置</button></div>
 <form id="qq-settings-form" novalidate><fieldset id="qq-settings-fields" disabled><div id="qq-fields"></div>
+<details id="qq-advanced"><summary>高级设置</summary><div id="qq-advanced-fields"></div></details>
 <div class="actions"><button id="qq-settings-save" type="submit" class="qb-btn qb-btn--primary" disabled>保存设置</button><button id="qq-settings-undo" type="button" class="qb-btn" disabled>撤销修改</button></div>
 </fieldset><p id="qq-settings-state" class="muted settings-state" role="status"></p></form></section>
 <section id="report-page" class="qb-card" role="tabpanel" aria-labelledby="report-heading" hidden><h2 id="report-heading">使用统计</h2><p class="muted">始终记录调用，保留最近 90 天（含今天）；每天清理到期数据。</p>
@@ -54,8 +55,8 @@ button:disabled{opacity:.5;cursor:not-allowed;transform:none}.qb-btn:disabled:ho
 <h3>分类统计</h3><div id="groups" class="scroll"></div></div><button id="report-next" class="qb-btn" hidden>下一页统计</button>
 </section>
 <section id="history-page" class="qb-card" role="tabpanel" aria-labelledby="history-heading" hidden><div class="section-heading"><h2 id="history-heading">聊天历史</h2><button id="history-refresh" class="qb-btn">加载会话</button></div><p class="muted">回复只保留已确认发送的内容。</p>
-<div class="actions"><button id="history-next" class="qb-btn" hidden>下一页</button></div><p id="history-state" class="muted" role="status">尚未加载，请点击加载查看</p><div id="history-loading" class="skeleton" aria-label="正在加载会话" hidden><span></span><span></span><span></span></div>
-<div id="history-detail" hidden><div class="section-heading"><h3 id="history-name"></h3><button id="history-close" class="qb-btn">收起详情</button></div><div id="rounds"></div><button id="clear-history" class="qb-btn danger">清空此会话</button></div><div id="conversations" class="scroll"></div></section>
+<p id="history-state" class="muted" role="status">尚未加载，请点击加载查看</p><div id="history-loading" class="skeleton" aria-label="正在加载会话" hidden><span></span><span></span><span></span></div>
+<div id="history-detail" hidden><div class="section-heading"><h3 id="history-name"></h3><button id="history-close" class="qb-btn">收起详情</button></div><div id="rounds"></div><button id="clear-history" class="qb-btn danger">清空此会话</button></div><div id="conversations" class="scroll"></div><button id="history-next" class="qb-btn" hidden>下一页</button></section>
 <section id="services-page" class="qb-card" role="tabpanel" aria-labelledby="services-heading" hidden><h2 id="services-heading">Service 记录</h2><p id="services-help" class="muted">查看哪些服务调用了 AI，默认最近 7 天，可查看最近 90 天。名称由调用方填写，未填写显示“未标注”。</p>
 <form id="services-form" class="row" novalidate><label>调用服务<input id="services-label" class="qb-input" placeholder="留空查看全部，填写完整名称筛选" aria-describedby="services-help"></label><label>查看范围<select id="services-period" class="qb-input" aria-describedby="services-help"><option value="week">最近 7 天</option><option value="all">最近 90 天</option></select></label><button id="services-load" class="qb-btn qb-btn--primary" type="submit">加载记录</button><p id="services-label-error" class="field-error" role="alert" hidden></p></form>
 <p id="services-state" class="muted" role="status">尚未加载，请点击加载记录</p><div id="services-loading" class="skeleton" aria-label="正在加载 Service 记录" hidden><span></span><span></span></div><div id="services-list" class="scroll" hidden></div><button id="services-next" class="qb-btn" hidden>下一页记录</button></section>
@@ -121,25 +122,40 @@ async function api(path, data) {
         throw Object.assign(new Error('提交内容过大，请缩短后重试'), { requestNotSent: true });
     }
 
-    try { result = await bridge.fetch(path, data === undefined ? {} : { method: 'POST', headers: { 'content-type': 'application/json' }, body: encoded }); }
-    catch { throw new Error(data === undefined ? '网络连接失败，请稍后重试' : '网络连接失败，操作结果未确认；请重新加载核对'); }
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 30000);
+    const timeoutError = () => Object.assign(new Error(data === undefined || [400, 401, 403].includes(result?.status)
+        ? '请求超时，请稍后重试' : '请求超时，操作结果未确认；请重新加载核对'), { status: result?.status });
 
-    try { json = await result.json(); } catch { /* 不回显解析器截取的响应正文。 */ }
+    try {
+        try { result = await bridge.fetch(path, { signal: controller.signal, ...(data === undefined ? {} : { method: 'POST', headers: { 'content-type': 'application/json' }, body: encoded }) }); }
+        catch {
+            if (controller.signal.aborted) { throw timeoutError(); }
 
-    if (!json || typeof json !== 'object' || Array.isArray(json) || !Object.keys(json).length) {
-        throw Object.assign(new Error(data === undefined ? '管理接口响应异常，请稍后重试' : '管理接口响应异常，操作结果未确认；请重新加载核对'), { status: result.status });
-    }
+            throw new Error(data === undefined ? '网络连接失败，请稍后重试' : '网络连接失败，操作结果未确认；请重新加载核对');
+        }
 
-    if (!result.ok) {
-        throw Object.assign(new Error(typeof json.error === 'string' && json.error ? json.error : '操作失败，请稍后重试'), {
-            code: typeof json.code === 'string' ? json.code : undefined,
-            field: typeof json.field === 'string' ? json.field : undefined, status: result.status
-        });
-    }
+        try { json = await result.json(); } catch { /* 不回显解析器截取的响应正文。 */ }
 
-    checkResponse(path, json, data !== undefined);
+        if (controller.signal.aborted) {
+            throw timeoutError();
+        }
 
-    return json;
+        if (!json || typeof json !== 'object' || Array.isArray(json) || !Object.keys(json).length) {
+            throw Object.assign(new Error(data === undefined ? '管理接口响应异常，请稍后重试' : '管理接口响应异常，操作结果未确认；请重新加载核对'), { status: result.status });
+        }
+
+        if (!result.ok) {
+            throw Object.assign(new Error(typeof json.error === 'string' && json.error ? json.error : '操作失败，请稍后重试'), {
+                code: typeof json.code === 'string' ? json.code : undefined,
+                field: typeof json.field === 'string' ? json.field : undefined, status: result.status
+            });
+        }
+
+        checkResponse(path, json, data !== undefined);
+
+        return json;
+    } finally { clearTimeout(timer); }
 }
 
 const serviceStatusNames = { success: '生成成功', failed: '生成失败', not_sent: '未请求模型', unknown: '结果未知', pending: '进行中' };
@@ -234,6 +250,8 @@ const qqSettingParents = {
     temperature: 'sendTemperature', temperatureMin: 'sendTemperature', temperatureMax: 'sendTemperature',
     historyMaxTurns: 'multiTurnEnabled', historyMaxChars: 'multiTurnEnabled'
 };
+const qqAdvancedFields = new Set(['timeoutMs', 'maxQuestionChars', 'maxQuotedChars', 'maxCombinedInputChars',
+    'maxSegmentUtf8Bytes', 'maxReplySegments', 'outputHardLimit']);
 
 function renderSettingsFields(properties, prefix, target) {
     for (const [key, schema] of Object.entries(properties)) {
@@ -308,6 +326,9 @@ function renderSettingsFields(properties, prefix, target) {
         error.setAttribute('role', 'alert');
         row.append(description, wrap, error);
         let container = $(path === 'connection.maxTokenParameter' ? 'connection-advanced-fields' : target);
+
+        if (prefix === 'qq' && qqAdvancedFields.has(key)) { container = $('qq-advanced-fields'); }
+
         const group = prefix === 'qq' && (['sendTemperature', 'multiTurnEnabled'].includes(key) ? key : qqSettingParents[key]);
 
         if (group) {
@@ -496,6 +517,8 @@ function focusSetting(path) {
     if (!entry || entry.prefix !== activePage) { return; }
 
     if (path === 'connection.maxTokenParameter') { $('connection-advanced').open = true; }
+
+    if (path.startsWith('qq.') && qqAdvancedFields.has(path.slice(3))) { $('qq-advanced').open = true; }
 
     const target = entry.control.disabled ? entry.row : entry.control;
 
@@ -835,7 +858,7 @@ function errorLabel(code) {
 
 function scopeLabel(item) {
     const span = document.createElement('span');
-    span.append((sceneNames[item.scene] || item.scene) + ' / ', identifier(item.scope_id));
+    span.append('机器人 ', identifier(item.bot_id), ' · ' + (sceneNames[item.scene] || item.scene) + ' / ', identifier(item.scope_id));
 
     return span;
 }
@@ -1185,7 +1208,7 @@ async function loadHistory(cursor = '') {
         setText('history-refresh', '重新加载会话');
         historyCursor = r.nextCursor;
         next('history-next', historyCursor);
-        table('conversations', ['场景/范围', '最后成功', '操作'], r.items.map(item => [scopeLabel(item), time(item.last_success_at_ms), button('查看原文', async trigger => {
+        table('conversations', ['机器人/会话', '最后成功', '操作'], r.items.map(item => [scopeLabel(item), time(item.last_success_at_ms), button('查看', async trigger => {
             historySelectionVersion++;
             const selection = { id: item.conversation_id, trigger, focus: focusVersion };
             historyDetailRequest = selection;

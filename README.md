@@ -1,10 +1,8 @@
-# AI 助手
+# QFlareBot AI 插件
 
-在 QQ 群聊或私聊中使用 `/ai <问题>` 向 AI 提问。
+为 QFlareBot 提供 AI 对话功能，在 QQ 群聊或私聊中使用 `/ai <问题>` 提问。
 
-- 支持图片提问、引用消息、连续对话和 Markdown 回复（看图需模型支持）
-- 连接 OpenAI、DeepSeek 等兼容接口
-- 设置回答风格和长度
-- 查看调用次数和 Token 用量
-- 查看或清空聊天记录
-- 为其他 QFlareBot 插件提供文字生成、图像理解和 JSON 输出服务
+- 接入 DeepSeek、OpenAI 等兼容接口
+- 支持连续对话、引用消息、Markdown 回复和图片提问（需模型支持）
+- 在插件页面管理设置、用量和聊天记录
+- 为其他 QFlareBot 插件提供文本生成、图像理解和 JSON 输出服务

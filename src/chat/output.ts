@@ -96,7 +96,12 @@ function markdownBlocks(text: string, maxBytes: number, segmentMax: number): Rep
     let fence = '';
     let blank = false;
 
-    for (const line of text.match(/[^\n]*\n|[^\n]+$/g) ?? []) {
+    for (let offset = 0; offset < text.length;) {
+        const newline = text.indexOf('\n', offset);
+        const end = newline < 0 ? text.length : newline + 1;
+        const line = text.slice(offset, end);
+        offset = end;
+
         if (!fence && blank && line.trim() && block.trim()) {
             result.push({ text: block, markdown: safe && completeInlineMarkdown(inline, segmentMax) });
             prefixChars += block.length;
